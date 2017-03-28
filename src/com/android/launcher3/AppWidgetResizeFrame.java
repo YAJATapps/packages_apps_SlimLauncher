@@ -138,6 +138,9 @@ public class AppWidgetResizeFrame extends FrameLayout implements View.OnKeyListe
                 .getDimensionPixelSize(R.dimen.resize_frame_background_padding);
         mTouchTargetWidth = 2 * mBackgroundPadding;
 
+mMinHSpan = 1;
+            mMinVSpan = 1;
+
         // When we create the resize frame, we first mark all cells as unoccupied. The appropriate
         // cells (same if not resized, or different) will be marked as occupied when the resize
         // frame is dismissed.
